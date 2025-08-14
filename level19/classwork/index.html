@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <title>ჩემი თემატური გვერდი</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      max-width: 700px;
+    }
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+    }
+    h2, h3, h4, h5, h6 {
+      color: #34495e;
+      margin-top: 1.5em;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #555;
+    }
+    button {
+      margin-top: 2em;
+      padding: 10px 15px;
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    button:hover {
+      background-color: #3498db;
+    }
+    .new-section {
+      margin-top: 2em;
+      padding: 15px;
+      border: 1px solid #bdc3c7;
+      border-radius: 5px;
+      background-color: #ecf0f1;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ჩემი მრავალთემატური გვერდი</h1>
+
+  <section id="topic1">
+    <h2>ტექნოლოგია და ინოვაციები</h2>
+    <p>ტექნოლოგიის სწრაფი განვითარება ყოველდღიურ ცხოვრებას ცვლის და უახლეს ინოვაციებს გვთავაზობს. თანამედროვე სამყარო ძალიან ინტეგრირებულია ტექნოლოგიურ განვითარებებთან.</p>
+    <p>ხელოვნური ინტელექტი, მანქანური სწავლება და დიდი მონაცემები მნიშვნელოვან როლს თამაშობენ მრავალი სფეროს ტრანსფორმაციაში.</p>
+  </section>
+
+  <section id="topic2">
+    <h3>გლობალური გარემო და კლიმატის ცვლილება</h3>
+    <p>კლიმატის ცვლილება არის ერთ-ერთი ყველაზე მწვავე გლობალური გამოწვევა. გარემოს დაცვა, ენერგიის გადახალისება და ბუნებრივი რესურსების მართვა აქტუალური საკითხებია.</p>
+    <p>მონაცემები აჩვენებს, რომ გლობალური ტემპერატურის ზრდა მნიშვნელოვნად აისახება ეკოსისტემებზე და ადამიანთა ცხოვრებაზე.</p>
+  </section>
+
+  <section id="topic3">
+    <h4>კულტურა და ხელოვნება</h4>
+    <p>კულტურა არის საზოგადოების ერთ-ერთი ყველაზე მნიშვნელოვანი ნაწილი, რომელიც განსაზღვრავს ჩვენი იდენტობის და გემოვნების არსს.</p>
+    <p>ხელოვნება გამდიდრებს სულს და გვაძლევს საშუალებას გავიგოთ ერთმანეთის ემოციები და აზრები.</p>
+  </section>
+
+  <button id="addSectionBtn">New Section Add</button>
+
+  <script>
+    const btn = document.getElementById('addSectionBtn');
+
+    btn.addEventListener('click', () => {
+      // შევქმნათ ახალი სექცია შემთხვევითი სათაურით და ტექსტით
+      const newSection = document.createElement('section');
+      newSection.classList.add('new-section');
+
+      // ახალი სათაური და პარაგრაფი
+      const newHeading = document.createElement('h5');
+      newHeading.textContent = "ახალი სექცია";
+
+      const newParagraph = document.createElement('p');
+      newParagraph.textContent = "ეს არის ახალი სექცია, რომელიც დაემატა ღილაკზე დაკლიკებისას.";
+
+      // სექციაში ჩასმა
+      newSection.appendChild(newHeading);
+      newSection.appendChild(newParagraph);
+
+      // გვერდზე დართვა ბოლოში
+      document.body.appendChild(newSection);
+    });
+  </script>
+
+</body>
+</html>

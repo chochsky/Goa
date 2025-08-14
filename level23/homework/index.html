@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <title>ფილმები - მთავარი</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background: #f0f2f5;
+      color: #222;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 2rem;
+      display: flex;
+      gap: 1rem;
+    }
+    nav ul li {
+      display: inline;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #005f99;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    .movies {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .movie {
+      max-width: 220px;
+      text-align: center;
+    }
+    .movie img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .movie img:hover {
+      transform: scale(1.05);
+    }
+    .movie p {
+      margin-top: 0.5rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">მთავარი</a></li>
+      <li><a href="movie1.html">Inception</a></li>
+      <li><a href="movie2.html">The Shawshank Redemption</a></li>
+      <li><a href="movie3.html">Interstellar</a></li>
+    </ul>
+  </nav>
+
+  <h1>ჩვენი საყვარელი ფილმები</h1>
+  <p>დააჭირეთ ფილმის ფოტოს და გადახვიდეთ მის დეტალურ გვერდზე.</p>
+
+  <div class="movies">
+    <div class="movie">
+      <a href="movie1.html">
+        <img src="https://m.media-amazon.com/images/I/51s+8H9v+GL._AC_.jpg" alt="Inception" />
+      </a>
+      <p>Inception</p>
+    </div>
+    <div class="movie">
+      <a href="movie2.html">
+        <img src="https://m.media-amazon.com/images/I/51NiGlapXlL._AC_.jpg" alt="The Shawshank Redemption" />
+      </a>
+      <p>The Shawshank Redemption</p>
+    </div>
+    <div class="movie">
+      <a href="movie3.html">
+        <img src="https://m.media-amazon.com/images/I/71nG85Us3JL._AC_SY679_.jpg" alt="Interstellar" />
+      </a>
+      <p>Interstellar</p>
+    </div>
+  </div>
+
+</body>
+</html>

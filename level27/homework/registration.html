@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <title>Registration Page - Facebook Clone</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 30px auto;
+      background-color: #f0f2f5;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    h1 {
+      color: #1877f2;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    input {
+      padding: 8px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #1877f2;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #165ec9;
+    }
+    .next-page {
+      display: block;
+      margin-top: 20px;
+      text-align: center;
+      color: #1877f2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .next-page:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Facebook Registration</h1>
+
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your first name" required />
+
+    <label for="lastname">Lastname:</label>
+    <input type="text" id="lastname" name="lastname" placeholder="Enter your last name" required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+
+    <button type="submit">Register</button>
+  </form>
+  <a href="about.html" class="next-page">Go To The Next Page</a>
+
+</body>
+</html>

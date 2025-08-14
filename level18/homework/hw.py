@@ -1,0 +1,8 @@
+name = input("შეიყვანე სახელი: ")
+print("გამარჯობა", name)
+age = int(input("შეიყვანე ასაკი: "))
+print("შენი ასაკია", age)
+print(len("hello"))       
+print(len([1, 2, 3]))      
+print(sum([1, 2, 3]))      
+print(sum(range(5)))       

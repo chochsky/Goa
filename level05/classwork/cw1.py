@@ -1,0 +1,10 @@
+num1 = float(input("შეიყვანეთ პირველი რიცხვი: "))
+num2 = float(input("შეიყვანეთ მეორე რიცხვი: "))
+
+print("ჯამი:", num1 + num2)
+print("კლება:", num1 - num2)
+print("გამრავლება:", num1 * num2)
+print("გაყოფა:", num1 / num2)
+print("მთელი გაყოფა:", num1 // num2)
+print("ნაშთი:", num1 % num2)
+print("ხარისხი:", num1 ** num2)
